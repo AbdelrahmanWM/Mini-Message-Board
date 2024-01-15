@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div class="content">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% messages.forEach(function(message){ %>
+        <% let date = String(message.added).substring(0,21) %>
+        <div class = 'message'>
+        <div class="head">
+          <p><%= message.user %></p>
+          <small><%= date %></small>
+        </div>
+        
+        <p class="text"><%= message.text %></p>
+      </div>
+      <% }); %>
+      <form method="POST" action="/new">
+        <h2>New message</h2>
+        <div class="contents">
+          <div class="input"> 
+            <input type="text" name="user" id="user" placeholder="username">
+            <button type="submit">Send</button>
+          </div>
+   
+          <textarea cols="20" rows="5" name="text" id="text">Your message</textarea>
+        </div>
+    </form>
+  </div>
+  </body>
+</html>

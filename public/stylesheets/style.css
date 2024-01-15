@@ -1,0 +1,73 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.content{
+  width:60%;
+  margin:0 auto;
+  text-align:center;
+  background-color: #dde5;
+  padding:50px;
+}
+h1{
+  color:#99e;
+  margin-top:0;
+}
+div.message{
+  background-color: #99e;
+  padding:5px 20px;
+  border-radius:5px;
+  margin:5px 0;
+}
+div.head{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p.text{
+  background-color: #dde;
+  padding:5px 10px;
+  text-align: left;
+  border-radius: 3px;
+}
+form{
+  background-color: #99e;
+  border-radius: 5px;
+  padding:3px 15px;
+
+}
+form .contents{
+  display:flex;
+  padding:5px;
+  flex-direction: column;
+}
+form .input{
+  display: flex;
+}
+form .input input{
+  flex-basis:80%;
+}
+form .input button{
+  flex-basis:20%;
+
+}
+
+input,textarea,button{
+  margin:1px;
+  padding:5px;
+  background-color: #dde;
+  border:none;
+  outline:none;
+  border-radius:3px;
+}
+button{
+  cursor:pointer;
+}
+button:hover{
+  background-color: #aad;
+}
+h2{
+  color:#dde;
+  margin:10px;
+}
